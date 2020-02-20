@@ -9,9 +9,10 @@ export const getData = () => dispatch => {
     axios
         .get('https://ghibliapi.herokuapp.com/films')
         .then(res => {
-            console.log(res);
+            console.log('this is res', res);
             dispatch({ type: UPDATE_MOVIES, payload: res.data })
         })
+
         .catch(err => {
             console.error('error fetching data from api. err: ', err);
             dispatch({ type: SET_ERROR, payload: 'error fetching api data' });

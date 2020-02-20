@@ -1,3 +1,4 @@
+import { GET_DATA, UPDATE_MOVIES, SET_ERROR } from '../actions/index';
 
 const initialState = {
     movies: [],
@@ -6,7 +7,7 @@ const initialState = {
 };
 
 export const moviesReducer = (state = initialState, action) => {
-    switch (action.payload) {
+    switch (action.type) {
         case GET_DATA: 
             return {
                 ...state,
