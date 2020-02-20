@@ -18,7 +18,11 @@ export default function App() {
       <div className="App">
         <h1>Ghibli Movies Ahoy!</h1>
         <MovieForm />
-        <MovieList />
+        <div className="movies-container">
+          
+          <MovieList />
+        </div>
+        
       </div>
     </Provider>
   )

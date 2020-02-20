@@ -15,7 +15,7 @@ const MovieForm = props => {
         {props.isFetchingData ? (
           <div>we are fetching data</div>
         ) : (
-          <button onClick={handleGetData}>Let's see some movies!</button>
+          <button className="button" onClick={handleGetData}>Let's see some movies!</button>
         )}
         </>
       );

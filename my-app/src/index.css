@@ -5,9 +5,63 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('./images/totoro-soot-sprites-pattern-valentina-hramov.jpg');
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1 {
+  font-size: 4rem;
+  color: rgb(71, 245, 245);
+  text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+  background-image: radial-gradient( goldenrod, rgba(218, 165, 32, 0) 80%); 
+  padding: 3%;
+  border-radius: 25%;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.movies-container {
+  background-color: rgba(38, 151, 38, 0.733);
+  background-image: linear-gradient(to bottom left, rgba(172, 255, 47, 0.808), rgba(0, 128, 0, 0.808),rgba(172, 255, 47, 0.801));
+  width: 50%;
+  margin-top: 2%;
+  padding: 3%;
+  border: 10px dotted greenyellow;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: greenyellow;
+  text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+.button {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  padding: 5px;
+  border: 4px dotted white;
+  font-size: 1.2rem;
+  text-align: center;
 }
